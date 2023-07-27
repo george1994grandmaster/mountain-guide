@@ -1,0 +1,349 @@
+.swiper {
+	height: 100%;
+
+	.image-layout-col {
+
+    img {
+
+      &:hover {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+
+
+.blog-swiper {
+
+	.swiper-button-prev, .swiper-button-next {
+
+		@media (max-width: 992px) {
+			top: 30px !important;
+			
+		}
+	}
+
+	.swiper-button-prev {
+
+		@media (max-width: 992px) {
+			left: calc(45% - 40px) !important;
+		}
+	}
+
+	.swiper-button-next {
+
+		@media (max-width: 992px) {
+			right: calc(45% - 40px) !important;
+		}
+	}
+
+	.swiper-slide {
+
+		@media (min-width: 992px) {
+			padding-right: 70px;
+		}
+	}
+
+	.text-content-spacing {
+
+		@media (max-width: 1200px) {
+			padding-left: 60px;
+			padding-right: 40px;
+		}
+
+		@media (max-width: 992px) {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+
+	.image-layout-col {
+
+		@media (max-width: 992px) {
+			padding: 0 20px;
+		}
+
+		img {
+			@media (max-width: 992px) {
+				height: 50vw;
+			}
+
+			@media (max-width: 600px) {
+				height: 60vw;
+			}
+		}
+	}
+
+	.swiper-slide {
+
+		@media (max-width: 992px) {
+			padding: 70px 0;
+		}
+	}
+}
+
+.date {
+	text-align: center;
+
+	@media (max-width: 600px) {
+    margin-top: 15px;
+  }
+}
+
+.swiper-button-disabled {
+	display: none !important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		transform: scale(1.07);
+	}
+}
+ 
+.home-swiper {
+
+	.swiper-button-prev {
+		left: 50px;
+		width: auto;
+	}
+	
+	.swiper-button-next {
+		right: 50px;
+		width: auto;
+	}
+}
+
+.blog-swiper {
+
+	.swiper-button-prev, .swiper-button-next {
+		width: 33px;
+	}
+}
+
+.swiper-button-next::after {
+	display: none;
+}
+
+.swiper-button-prev::after {
+	display: none;
+}
+
+.home-banner-slider {
+	width: 100%;
+	height: calc(100vh - 86px);
+
+	@media (max-width: 1200px) {
+		height: calc(70vh - 86px);
+	}
+
+	@media (max-width: 720px) {
+		height: calc(50vh - 86px);
+	}
+
+	img {
+		display: block;
+		height: 100%;
+	}
+}
+
+.certificate-sliders-wrapper {
+	padding: 100px 0;
+
+	@media (max-width: 1400px) {
+		padding: 20px 0 80px 0;
+	} 
+}
+
+.certificate-swiper {
+	margin-bottom: 50px;
+
+	&:last-child {
+    margin-bottom: 0;
+  }
+
+	.swiper-wrapper {
+		align-items: center;
+	}
+
+	.form-wrapper {
+		margin-bottom: 20px;
+	}
+
+	@media (max-width: 1400px) {
+		.image-layout-col {
+
+			img {
+				height: 35vw;
+			}
+		}
+	}
+
+	@media (max-width: 1200px) {
+		.image-layout-col {
+
+			img {
+				height: 40vw;
+			}
+		}
+	}
+
+	@media (max-width: 500px) {
+		.image-layout-col {
+
+			img {
+				height: 50vw;
+			}
+		}
+	}
+
+	@media (max-width: 1200px) {
+		.image-layout-col {
+			flex: 0 0 100%;
+    	max-width: 100%;
+		}
+
+		.text-layout-col {
+			flex: 0 0 100%;
+    	max-width: 100%;
+		}
+
+		.text-content-spacing {
+			padding-top: 30px;
+			padding-bottom: 70px;
+		}
+	}
+
+	.swiper-button-next, .swiper-button-prev {
+    width: auto;
+    padding: 15px;
+    transition: all 0.4s ease; 
+
+		&:hover {
+      transform: scale(1.05);
+      border-radius: 50px;
+    }
+  }
+
+	.swiper-button-next {
+    top: 85%;
+    right: 25px;
+
+		@media (max-width: 1200px) {
+			top: 95%;
+		}
+
+    &:hover {
+      background-color: $bright;
+
+      p {
+        color: $light;
+      }
+
+      svg {
+
+        path {
+          fill: $light;
+          stroke: $light;
+        }
+      }
+    }
+    
+    p {
+      margin-right: 10px;
+      color: #F05E47;
+      font-size: calc(14px + 0.2vw);
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+    }
+
+    svg {
+      width: 20px;
+      transform: rotate(180deg);
+    }
+	}
+
+  .swiper-button-prev {
+    flex-direction: row-reverse;
+    top: 85%;
+    left: 25px;
+
+		@media (max-width: 1200px) {
+			top: 95%;
+		}
+
+    &:hover {
+      background-color: $light;
+
+      p {
+        color: $bright;
+      }
+
+      svg {
+       
+				path {
+						fill: $bright;
+						stroke: $bright;
+					}
+				}
+    	}
+   
+   svg {
+      width: 20px;
+      margin-right: 10px;
+    }
+    
+    p {
+			font-size: calc(14px + 0.2vw);
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      color: #fff;
+    }
+  }
+
+	.text-content-spacing {
+		padding-left: 50px;
+		padding-right: 50px;
+
+		@media (max-width: 1200px) {
+			padding-top: 30px;
+			padding-bottom: 80px;
+		}
+	}
+
+	.image-text-layout {
+		overflow: hidden;
+
+		img {
+			 &:hover {
+				transform: scale(1.05);
+			 }
+		}
+	}
+}
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+
+
+

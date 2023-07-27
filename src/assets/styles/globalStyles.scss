@@ -1,0 +1,135 @@
+.p-relative {
+	position: relative;
+}
+
+.p-absolute {
+	position: absolute;
+}
+
+.p-fixed {
+	position: fixed;
+}
+
+.l-0 {
+	left: 0;
+}
+
+.r-0 {
+	right: 0;
+}
+
+.t-0 {
+	top: 0;
+}
+
+.b-0 {
+	bottom: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+    
+.ai-center {
+  align-items: center;
+}
+
+.ai-end {
+	align-items: flex-end;
+}
+
+.ai-start {
+	align-items: flex-start;
+}
+
+.jc-center {
+	justify-content: center;
+}
+
+.jc-start {
+	justify-content: start;
+}
+
+.jc-end {
+	justify-content: flex-end;
+}
+
+.jc-between {
+	justify-content: space-between;
+}
+
+.fd-column {
+	flex-direction: column;
+}
+
+.f-wrap {
+	flex-wrap: wrap;
+}
+
+.w-reverse {
+	flex-wrap: wrap-reverse;
+}
+
+.h-100 {
+	height: 100%;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.bg-bright {
+	background-color: $bright;
+}
+
+.bg-light {
+	background-color: $light;
+}
+
+.bg-dark {
+	background-color: $dark;
+}
+
+.bright {
+	color: $bright;
+}
+
+.light {
+	color: $light;
+}
+
+.dark {
+	color: $dark;
+}
+
+p, span, label, button, a, .title, .text {
+	font-family: 'Montserrat', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+/*p, span, label, button, a, .title, .text {
+	font-family: "Roboto","Helvetica","Arial",sans-serif;
+}*/
+
+.fw-strong {
+	font-weight: $fontStrong;
+}
+
+.fw-bold {
+	font-weight: $fontbold;
+}
+
+.fw-middle {
+	font-weight: $fontMiddle;
+   }
+
+.fw-light {
+   font-weight: $fontLight;
+}

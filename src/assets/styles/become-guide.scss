@@ -1,0 +1,131 @@
+ 
+@keyframes fadeTitle {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.question-title {
+  font-size: 70px;
+
+  @media (max-width: 992px) {
+    font-size: 50px;
+  }
+}
+
+.question-star {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 200px;
+}
+
+.certificate-text-container {
+  width: 75%;
+  margin: 0 auto;
+
+  @media (max-width: 1100px) {
+    width: 85%;
+  }
+
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+}
+
+.certificate-text-content {
+  position: relative;
+  padding: 70px;
+  border-radius: 35px;
+
+  @media (max-width: 720px) {
+    padding: 40px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 25px 15px;
+  }
+}
+
+.certificate-border-overlay {
+  border: 20px solid #003642;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #003642 70px, transparent 70px, transparent), linear-gradient(180deg, #003642 70px, transparent 70px, transparent), linear-gradient(270deg, #003642 70px, transparent 70px, transparent), linear-gradient(360deg, #003642 70px, transparent 70px, transparent);
+  
+  @media (max-width: 500px) {
+    border: 10px solid #003642;
+  }
+}
+
+.adventure-certificate-title {
+  margin-bottom: 30px;
+  font-size: calc(16px + 1vw);
+  text-align: center;
+}
+
+.adventure-certificate-text {
+  font-size: calc(14px + 0.1vw);
+
+  @media (max-width: 500px) {
+    font-size: calc(12px + 0.1vw);
+  }
+}
+
+.certificate-text-top-star {
+  top: 20px;
+  right: -60px;
+  width: 100px;
+
+  @media (max-width: 992px) {
+    width: 70px;
+    right: 0px;
+    top: -40px;
+  }
+}
+
+.certificate-text-bottom-star {
+  bottom: 20px;
+  left: -60px;
+  width: 100px;
+
+  @media (max-width: 992px) {
+    width: 70px;
+    left: 0px;
+    bottom: -40px;
+  }
+}
+
+.certificate-title {
+  margin-bottom: 50px;
+  font-size: calc(30px + 1vw);
+  letter-spacing: 1px;
+}
+
+.certificate-text {
+ font-size: calc(15px + 0.2vw);
+ line-height: 1.4;
+}
+
+.certificate-banner-img {
+  padding: 50px 0;
+
+  img {
+    display: block;
+    height: 30vw;
+
+    @media (max-width: 992px) {
+      height: auto;
+    }
+  }
+}
+
+.certificate-title-star {
+  top: 20px;
+  right: 0;
+  width: 170px;
+}
+
+

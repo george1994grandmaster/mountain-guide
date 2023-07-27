@@ -1,0 +1,215 @@
+
+.bright-border-overlay {
+  border-right: 15px solid $bright;
+  border-bottom: 15px solid $bright;
+  border-radius: 50px;
+  background: linear-gradient(90deg, $dark 70px, transparent 70px, transparent),
+            linear-gradient(180deg, $dark 70px, transparent 70px, transparent),
+            linear-gradient(270deg, $dark 70px, transparent 70px, transparent),
+            linear-gradient(360deg, $dark 70px, transparent 70px, transparent),
+}
+
+
+.dark-border-overlay {
+  border-top: 15px solid $dark;
+  border-left: 15px solid $dark;
+  border-radius: 50px;
+  background: linear-gradient(90deg, $dark 70px, transparent 70px, transparent),
+            linear-gradient(180deg, $dark 70px, transparent 70px, transparent),
+            linear-gradient(270deg, $dark 70px, transparent 70px, transparent),
+            linear-gradient(360deg, $dark 70px, transparent 70px, transparent),
+}
+
+.main-form-spacing {
+  padding: 100px 0 150px 0;
+
+  @media (max-width: 720px) {
+    padding: 60px 0 100px 0;
+  }
+}
+
+.form-wrapper {
+  position: relative;
+  max-width: 750px;
+  margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    width: 65%;
+  }
+
+  @media (max-width: 992px) {
+    width: 80%;
+  }
+
+  @media (max-width: 720px) {
+    width: 100%;
+  }
+  
+  .right-top-star {
+    bottom: 80%;
+    right: -40px;
+    width: 80px;
+    z-index: 9999;
+  }
+
+  .left-middle-star {
+    top: 60%;
+    left: -60px;
+    width: 100px;
+    z-index: 9999;
+  }
+
+  .right-bottom-star {
+    top: 80%;
+    right: -40px;
+    width: 70px;
+    z-index: 9999;
+  }
+}
+
+.overall-form-wrapper {
+
+  button {
+    background-color: $dark;
+
+    &:hover {
+      background-color: $bright;
+    }
+  }
+}
+
+.info-border-form {
+  border: 15px solid $bright;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #003642 70px, transparent 70px, transparent), linear-gradient(180deg, #003642 70px, transparent 70px, transparent), linear-gradient(270deg, #003642 70px, transparent 70px, transparent), linear-gradient(360deg, #003642 70px, transparent 70px, transparent);
+}
+
+form {
+
+  .MuiButton-root {
+    padding: 6px 20px;
+    background-color: $bright;
+    font-size: calc(12px + 0.1vw);
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $dark;
+    }
+
+    @media (max-width: 500px) {
+      width: 100%
+    }
+  }
+
+  .media-item-col {
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .col-area {
+    width: 100%;
+    margin: 30px 0 20px 0;
+  }
+
+  .MuiInputBase-root {
+    width: 100%;
+    margin-bottom: 0 !important;
+  }
+}
+
+.MuiInputBase-root {
+  width: 100%;
+  
+
+  input {
+    padding: 8px 15px;
+    color: $dark; 
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+textarea {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form-content {
+  position: relative;
+  padding: 40px 70px;
+  border-radius: 35px;
+
+  @media (max-width: 720px) {
+    padding: 40px 30px;
+  }
+
+  @media (max-width: 450px) {
+    padding: 25px 15px;
+  }
+}
+
+.register-form-title {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: calc(18px + 0.4vw);
+}
+
+.form-btn {
+  width: 100%;
+  margin: 20px 0;
+  text-align: right;
+}
+
+.contact-form {
+
+  label {
+    width: 25%;
+    margin-right: 40px;
+    color: $dark !important;
+    font-weight: bold !important;
+    font-family: "Montserrat", sans-serif !important;
+    line-height: 0.7 !important;
+
+    @media (max-width: 600px) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.contact-form-block {
+  .form-wrapper {
+    
+    @media (max-width: 1200px) {
+      width: 70%;
+    }
+
+    @media (max-width: 992px) {
+      width: 90%;
+    }
+
+    @media (max-width: 720px) {
+      width: 100%;
+    }
+  }
+}
+
+.contact-border-overlay {
+  border-bottom: 15px solid #003642;
+  border-top: 5px solid #003642;
+  border-left: 15px solid #003642;
+  border-right: 5px solid #003642;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #003642 70px, transparent 70px, transparent), linear-gradient(180deg, #003642 70px, transparent 70px, transparent), linear-gradient(270deg, #003642 70px, transparent 70px, transparent), linear-gradient(360deg, #003642 70px, transparent 70px, transparent);
+}
+
+
+
