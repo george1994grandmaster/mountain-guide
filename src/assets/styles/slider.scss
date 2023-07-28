@@ -12,8 +12,6 @@
   }
 }
 
-
-
 .blog-swiper {
 
 	.swiper-button-prev, .swiper-button-next {
@@ -172,7 +170,12 @@
 		margin-bottom: 20px;
 	}
 
-	@media (max-width: 1400px) {
+	@media (max-width: 1380px) {
+		margin-bottom: 10px;
+	}
+
+	@media (max-width: 1300px) {
+		
 		.image-layout-col {
 
 			img {
@@ -182,6 +185,8 @@
 	}
 
 	@media (max-width: 1200px) {
+		margin-bottom: 50px;
+
 		.image-layout-col {
 
 			img {
