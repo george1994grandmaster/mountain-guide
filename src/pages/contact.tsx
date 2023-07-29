@@ -55,7 +55,7 @@ const Contact:FC = () => {
                   </div>
                   <div className="contact-inner-spacing">
                     {contactInfo.map((el, index) => (
-                      <div className="contact-info-item">
+                      <div className="contact-info-item" key={index}>
                         <Link to="#">
                           {el.icon}
                           <span className="text light fw-bold">
