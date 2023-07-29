@@ -38,13 +38,13 @@
 	@media (max-width: 720px) {
 		padding: 50px 0;
 	}
+}
 
-	.image-text-layout {
-		margin-bottom: 70px;
-	
-		@media (max-width: 720px) {
-			margin-bottom: 40px;
-		}
+.become-guide-block {
+	margin-bottom: 70px;
+
+	@media (max-width: 720px) {
+		margin-bottom: 40px;
 	}
 }
 
@@ -78,16 +78,19 @@
 
 	.equipments-content {
 
-		@media (min-width: 992px) {
-			max-width: 75%;
-			margin: 0 auto;
-		}
-		
-		@media (min-width: 720px) {
-			max-width: 85%;
+		@media (min-width: 500px) {
+			width: 80%;
 			margin: 0 auto;
 		}
 
+		@media (min-width: 720px) {
+			width: 90%;
+		}
+
+		@media (min-width: 992px) {
+			width: 75%;
+		}
+		
 		.equipments-title {
 			margin-bottom: 70px;
 		}
@@ -132,6 +135,21 @@
 
 	@media (max-width: 500px) {
 		width: 100%; 
+	}
+}
+
+.equipments-img {
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.equipments-text {
+	text-align: center;
+	font-size: calc(14px + 0.1vw);
+
+	@media (max-width: 720px) {
+		font-size: calc(14px + 4.1vw);
 	}
 }
 

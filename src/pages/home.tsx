@@ -48,9 +48,9 @@ const Home:FC = () => {
           <div className="become-guide-wrapper">
             <BecomeGuideBanner/>
             {mainBecomeBlocks.map((block, index) => (
-              <div key={index} className="image-text-layout w-reverse" >
+              <div className="become-guide-block" key={index}>
                 {index % 2 === 0 ? (
-                  <>
+                  <div className="image-text-layout w-reverse">
                     <div className="text-layout-col bg-light">
                       <div className="d-flex ai-center jc-center h-100">
                         <div className="text-content-spacing vertical-text-spacing">
@@ -62,9 +62,9 @@ const Home:FC = () => {
                     <div className="image-layout-col">
                       <img src={block.image} alt={block.image} />
                     </div>
-                  </>
+                  </div>
                 ) : (
-                  <>
+                  <div className="image-text-layout">
                     <div className="image-layout-col">
                       <img src={block.image} alt={block.image} />
                     </div>
@@ -76,7 +76,7 @@ const Home:FC = () => {
                         </div>
                       </div>
                     </div>
-                  </>
+                  </div>
                 )}
               </div>
             ))}
@@ -98,7 +98,10 @@ const Home:FC = () => {
             <div className="equipments-logo-content">
               {gears.map((gear, index) => (
                 <div key={index} className="equipments-logo">
-                  <img src={gear.image} alt="equipments-img" />
+                  <div className="equipments-img">
+                    <img src={gear.image} alt="equipments-img" />
+                  </div>
+                  <p className="equipments-text title dark fw-bold">{gear.text}</p>
                 </div>
                 ))}
             </div>

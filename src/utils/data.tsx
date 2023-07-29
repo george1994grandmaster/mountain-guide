@@ -158,19 +158,20 @@ export const mainBecomeBlocks: becomeBlocks[] = [
 ];
 
 interface gear {
-  image: string
+  image: string;
+  text: string
 }
 
 export const gears: gear[] = [
-  { image: harness },
-  { image: chalkbag },
-  { image: quickDraw },
-  { image: rope },
-  { image: carabiner },
-  { image: shoes },
-  { image: belayDevice },
-  { image: helmet },
-  { image: crampons },
+  { image: harness, text: "Harness" },
+  { image: chalkbag, text: "Chalkbag" },
+  { image: quickDraw, text: "QuickDraw" },
+  { image: rope, text: "Rope" },
+  { image: carabiner, text: "Carabiner" },
+  { image: shoes, text: "Shoes" },
+  { image: belayDevice, text: "BelayDevice" },
+  { image: helmet, text: "Helmet" },
+  { image: crampons, text: "Crampons" },
 ];
 
 
